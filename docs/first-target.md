@@ -65,6 +65,11 @@ nnroControlObject_  segment tag 0x0000c580  (segment 0, offset 0xc58)
 This is recorded in `docs/symbols/DllDialogCommon.map` and is the first anchor for
 recovering the module's loader/control-object lifecycle.
 
+The first source reconstruction is in `src/dialog_common_recovered.c`. It records
+the confirmed object offsets and preliminary control flow for the small lifecycle
+helpers at CRO offsets `0x2d8` through `0x43c`. Calls into imported services remain
+explicitly marked unresolved.
+
 ## Comparison candidates
 
 `DllFatalErrorProc.cro` is a useful secondary sample because it is also 12 KiB and

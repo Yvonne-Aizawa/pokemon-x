@@ -63,11 +63,11 @@ def main() -> int:
     segment_table = u32(data, 0xC8)
     segment_count = u32(data, 0xCC)
     for index in range(segment_count):
-        offset = segment_table + index * 0x8
-        if offset + 0x8 > len(data):
+        offset = segment_table + index * 0xc
+        if offset + 0xc > len(data):
             break
-        first, second = struct.unpack_from("<II", data, offset)
-        print(f"  {index}: 0x{first:08x}, 0x{second:08x}")
+        segment_offset, size, segment_id = struct.unpack_from("<III", data, offset)
+        print(f"  {index}: offset=0x{segment_offset:08x} size=0x{size:x} id={segment_id}")
     return 0
 
 

@@ -60,3 +60,21 @@ python3 tools/export_symbols.py extracted/romfs/DllDialogCommon.cro
 
 The symbol map contains names and segment tags only; it does not copy binary data.
 
+Dump external relocation/patch entries with:
+
+```sh
+python3 tools/cro_patches.py extracted/romfs/DllDialogCommon.cro
+```
+
+List the modules imported by the static CRS with:
+
+```sh
+python3 tools/static_imports.py extracted/romfs/static.crs
+```
+
+Trace one module's static-side anonymous import and patch list with:
+
+```sh
+python3 tools/trace_static_import.py extracted/romfs/static.crs DllDialogCommon
+```
+

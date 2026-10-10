@@ -1,4 +1,4 @@
-.PHONY: help setup inventory modules inspect disassemble symbols check
+.PHONY: help setup inventory modules inspect disassemble symbols patches check
 
 MODULE ?= extracted/romfs/DllDialogCommon.cro
 
@@ -23,6 +23,9 @@ disassemble:
 
 symbols:
 	python3 tools/export_symbols.py "$(MODULE)"
+
+patches:
+	python3 tools/cro_patches.py "$(MODULE)"
 
 check:
 	python3 -m py_compile tools/*.py

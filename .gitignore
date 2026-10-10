@@ -1,0 +1,30 @@
+# User-provided game images
+*.3ds
+*.cci
+*.cia
+*.cxi
+*.3dsx
+
+# ROM-derived and generated data (never commit these)
+/extracted/
+/build/
+/generated/
+/work/
+/tmp/
+
+# Third-party tools downloaded from Project_CTR releases
+/tools/ctrtool
+/tools/makerom
+
+# Generated binaries and linker output
+*.bin
+*.cro
+*.elf
+*.map
+*.garc
+*.lz
+
+# Python cache
+__pycache__/
+*.py[cod]
+

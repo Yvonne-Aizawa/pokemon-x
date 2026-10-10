@@ -16,9 +16,22 @@ place them in `tools/`, or make them available in your `PATH`.
 python3 tools/setup.py --rom /path/to/Pokemon_X.cci
 ```
 
+The same workflow is available through the Makefile:
+
+```sh
+make setup ROM=/path/to/Pokemon_X.cci
+make inventory modules
+make inspect disassemble symbols
+```
+
+Use `make help` to see all available development targets.
+
 After setup, the ROM-derived files will be under `extracted/`. They are ignored by
 Git and must never be committed. The build command will be added as the source tree
 is reconstructed.
+
+See [`docs/target.md`](docs/target.md) for the supported release and
+[`docs/progress.md`](docs/progress.md) for current project milestones.
 
 ## Repository policy
 

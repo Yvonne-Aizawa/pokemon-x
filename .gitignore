@@ -24,6 +24,10 @@
 *.garc
 *.lz
 
+# Human-readable symbol maps are source metadata, not generated binaries
+!docs/symbols/
+!docs/symbols/*.map
+
 # Python cache
 __pycache__/
 *.py[cod]

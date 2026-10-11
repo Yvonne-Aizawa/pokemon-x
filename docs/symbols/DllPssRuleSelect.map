@@ -1,0 +1,5 @@
+# Exported symbols: DllPssRuleSelect.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00020bc0` | 0 | `0x20bc` |

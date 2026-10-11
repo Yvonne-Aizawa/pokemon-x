@@ -1,0 +1,6 @@
+# Exported symbols: DllLiveCup.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000a5c80` | 0 | `0xa5c8` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00098d00` | 0 | `0x98d0` |

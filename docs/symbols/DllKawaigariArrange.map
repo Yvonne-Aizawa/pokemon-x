@@ -1,0 +1,5 @@
+# Exported symbols: DllKawaigariArrange.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00078640` | 0 | `0x7864` |

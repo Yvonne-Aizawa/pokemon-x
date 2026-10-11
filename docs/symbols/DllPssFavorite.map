@@ -1,0 +1,6 @@
+# Exported symbols: DllPssFavorite.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00020d00` | 0 | `0x20d0` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0001ee80` | 0 | `0x1ee8` |

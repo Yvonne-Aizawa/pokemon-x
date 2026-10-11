@@ -1,0 +1,5 @@
+# Exported symbols: DllGameClearSave.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000c8c0` | 0 | `0xc8c` |

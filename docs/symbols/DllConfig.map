@@ -1,0 +1,5 @@
+# Exported symbols: DllConfig.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0003ce40` | 0 | `0x3ce4` |

@@ -1,0 +1,5 @@
+# Exported symbols: DllCommWait.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000b8c0` | 0 | `0xb8c` |

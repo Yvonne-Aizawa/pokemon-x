@@ -1,0 +1,5 @@
+# Exported symbols: DllBattlePartySelect.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00016840` | 0 | `0x1684` |

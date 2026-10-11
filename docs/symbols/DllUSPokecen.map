@@ -1,0 +1,5 @@
+# Exported symbols: DllUSPokecen.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00007a40` | 0 | `0x7a4` |

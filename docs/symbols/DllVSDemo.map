@@ -1,0 +1,5 @@
+# Exported symbols: DllVSDemo.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0002a3c0` | 0 | `0x2a3c` |

@@ -1,0 +1,6 @@
+# Exported symbols: DllTitle.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x001bfdc0` | 0 | `0x1bfdc` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x001a9500` | 0 | `0x1a950` |

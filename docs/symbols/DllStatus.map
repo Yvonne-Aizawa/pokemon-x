@@ -1,0 +1,5 @@
+# Exported symbols: DllStatus.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000a9740` | 0 | `0xa974` |

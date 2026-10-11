@@ -1,0 +1,6 @@
+# Exported symbols: DllPCMenu.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000320c0` | 0 | `0x320c` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00031240` | 0 | `0x3124` |

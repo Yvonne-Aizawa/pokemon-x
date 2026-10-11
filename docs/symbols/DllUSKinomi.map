@@ -1,0 +1,5 @@
+# Exported symbols: DllUSKinomi.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00027380` | 0 | `0x2738` |

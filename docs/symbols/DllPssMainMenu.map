@@ -1,0 +1,6 @@
+# Exported symbols: DllPssMainMenu.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00022bc0` | 0 | `0x22bc` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00021080` | 0 | `0x2108` |

@@ -1,0 +1,6 @@
+# Exported symbols: DllRandomTrade.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00042ac0` | 0 | `0x42ac` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00041bc0` | 0 | `0x41bc` |

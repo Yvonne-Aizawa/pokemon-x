@@ -1,0 +1,5 @@
+# Exported symbols: DllUSPassage.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0001f780` | 0 | `0x1f78` |

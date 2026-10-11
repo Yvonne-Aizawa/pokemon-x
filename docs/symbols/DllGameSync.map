@@ -1,0 +1,6 @@
+# Exported symbols: DllGameSync.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0003dd80` | 0 | `0x3dd8` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0003ab00` | 0 | `0x3ab0` |

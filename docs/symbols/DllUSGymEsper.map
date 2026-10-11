@@ -1,0 +1,5 @@
+# Exported symbols: DllUSGymEsper.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00016fc0` | 0 | `0x16fc` |

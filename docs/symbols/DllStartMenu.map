@@ -1,0 +1,5 @@
+# Exported symbols: DllStartMenu.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0001b700` | 0 | `0x1b70` |

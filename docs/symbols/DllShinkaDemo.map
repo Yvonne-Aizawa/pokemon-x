@@ -1,0 +1,6 @@
+# Exported symbols: DllShinkaDemo.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0003a1c0` | 0 | `0x3a1c` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00039440` | 0 | `0x3944` |

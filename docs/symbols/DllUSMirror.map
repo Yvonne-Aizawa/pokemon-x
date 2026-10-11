@@ -1,0 +1,5 @@
+# Exported symbols: DllUSMirror.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00002580` | 0 | `0x258` |

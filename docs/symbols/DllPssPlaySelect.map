@@ -1,0 +1,6 @@
+# Exported symbols: DllPssPlaySelect.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000efc0` | 0 | `0xefc` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0000d8c0` | 0 | `0xd8c` |

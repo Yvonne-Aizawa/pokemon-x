@@ -1,0 +1,6 @@
+# Exported symbols: DllKawaigari.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0043b040` | 0 | `0x43b04` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0043a000` | 0 | `0x43a00` |

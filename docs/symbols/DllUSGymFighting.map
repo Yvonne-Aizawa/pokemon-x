@@ -1,0 +1,5 @@
+# Exported symbols: DllUSGymFighting.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00010880` | 0 | `0x1088` |

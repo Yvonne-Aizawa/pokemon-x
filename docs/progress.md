@@ -20,6 +20,11 @@
 - [x] Decode the CRO segment and external patch entry layouts
 - [x] Inventory static CRS exports and imported modules
 - [x] Trace the `DllDialogCommon` static-side anonymous import
+- [x] **Round-1 module-level preliminary recovery: 133 / 133 modules covered** (see [`docs/decomp-round-1.md`](decomp-round-1.md))
+- [x] Catalog every function prologue across all 133 modules (13,554 entries)
+- [x] Fix disassembly tool bug: `-Mforce-thumb` mis-interprets ARM loader veneers
+- [x] Persist the orchestration playbook at `docs/decomp-orchestration/SKILL.md`
 - [ ] Reconstruct the first function with resolved imports
+- [ ] **Round-2 per-function preliminary recovery** (planned, see Round-1 doc)
 - [ ] Add binary comparison checks
 

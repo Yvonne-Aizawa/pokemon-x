@@ -1,0 +1,5 @@
+# Exported symbols: DllUSR15.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000135c0` | 0 | `0x135c` |

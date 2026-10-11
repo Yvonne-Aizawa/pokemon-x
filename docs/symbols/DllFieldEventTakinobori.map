@@ -1,0 +1,5 @@
+# Exported symbols: DllFieldEventTakinobori.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0001af80` | 0 | `0x1af8` |

@@ -1,0 +1,5 @@
+# Exported symbols: DllUSGymRock.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00004280` | 0 | `0x428` |

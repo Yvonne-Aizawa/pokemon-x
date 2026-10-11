@@ -1,0 +1,6 @@
+# Exported symbols: DllHologramMail.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00114a40` | 0 | `0x114a4` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x000f8340` | 0 | `0xf834` |

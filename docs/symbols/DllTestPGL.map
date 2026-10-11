@@ -1,0 +1,6 @@
+# Exported symbols: DllTestPGL.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00000d00` | 0 | `0xd0` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00000000` | 0 | `0x0` |

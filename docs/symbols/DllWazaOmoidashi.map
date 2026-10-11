@@ -1,0 +1,6 @@
+# Exported symbols: DllWazaOmoidashi.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000381c0` | 0 | `0x381c` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00034180` | 0 | `0x3418` |

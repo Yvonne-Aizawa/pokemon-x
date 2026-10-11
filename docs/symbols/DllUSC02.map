@@ -1,0 +1,5 @@
+# Exported symbols: DllUSC02.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0001bbc0` | 0 | `0x1bbc` |

@@ -1,0 +1,5 @@
+# Exported symbols: DllTrainerCase.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00038840` | 0 | `0x3884` |

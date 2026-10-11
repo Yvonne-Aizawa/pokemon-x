@@ -1,0 +1,5 @@
+# Exported symbols: DllUSGymElec.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00016e00` | 0 | `0x16e0` |

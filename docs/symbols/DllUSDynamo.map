@@ -1,0 +1,5 @@
+# Exported symbols: DllUSDynamo.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00002000` | 0 | `0x200` |

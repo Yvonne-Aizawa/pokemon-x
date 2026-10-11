@@ -1,0 +1,6 @@
+# Exported symbols: DllStrInput.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00065d00` | 0 | `0x65d0` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00064ec0` | 0 | `0x64ec` |

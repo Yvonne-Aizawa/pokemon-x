@@ -1,0 +1,6 @@
+# Exported symbols: DllField.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00e93e40` | 0 | `0xe93e4` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00d4a680` | 0 | `0xd4a68` |

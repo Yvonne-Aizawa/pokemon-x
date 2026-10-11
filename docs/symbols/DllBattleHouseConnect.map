@@ -1,0 +1,6 @@
+# Exported symbols: DllBattleHouseConnect.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000cdc0` | 0 | `0xcdc` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0000ba40` | 0 | `0xba4` |

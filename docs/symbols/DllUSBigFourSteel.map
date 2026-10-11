@@ -1,0 +1,5 @@
+# Exported symbols: DllUSBigFourSteel.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000158c0` | 0 | `0x158c` |

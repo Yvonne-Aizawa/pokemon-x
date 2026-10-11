@@ -1,0 +1,5 @@
+# Exported symbols: DllUSBigFourFire.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00017800` | 0 | `0x1780` |

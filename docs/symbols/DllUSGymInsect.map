@@ -1,0 +1,5 @@
+# Exported symbols: DllUSGymInsect.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000f700` | 0 | `0xf70` |

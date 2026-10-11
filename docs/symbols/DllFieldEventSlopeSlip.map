@@ -1,0 +1,5 @@
+# Exported symbols: DllFieldEventSlopeSlip.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00003280` | 0 | `0x328` |

@@ -1,0 +1,6 @@
+# Exported symbols: DllEggDemo.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000161c0` | 0 | `0x161c` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00015e00` | 0 | `0x15e0` |

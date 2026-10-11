@@ -1,0 +1,5 @@
+# Exported symbols: DllUSBadgeCheckGate.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00005700` | 0 | `0x570` |

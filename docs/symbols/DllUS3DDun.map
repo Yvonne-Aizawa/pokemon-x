@@ -1,0 +1,5 @@
+# Exported symbols: DllUS3DDun.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00006d00` | 0 | `0x6d0` |

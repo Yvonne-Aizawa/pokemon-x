@@ -1,0 +1,6 @@
+# Exported symbols: DllSparringMenu.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0005b180` | 0 | `0x5b18` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x000598c0` | 0 | `0x598c` |

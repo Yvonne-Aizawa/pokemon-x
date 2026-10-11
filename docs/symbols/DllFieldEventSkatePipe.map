@@ -1,0 +1,5 @@
+# Exported symbols: DllFieldEventSkatePipe.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0001b6c0` | 0 | `0x1b6c` |

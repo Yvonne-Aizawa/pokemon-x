@@ -1,0 +1,6 @@
+# Exported symbols: DllPokeList.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00104700` | 0 | `0x10470` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x000ff940` | 0 | `0xff94` |

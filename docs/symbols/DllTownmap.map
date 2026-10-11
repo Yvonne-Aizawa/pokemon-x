@@ -1,0 +1,5 @@
+# Exported symbols: DllTownmap.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00034bc0` | 0 | `0x34bc` |

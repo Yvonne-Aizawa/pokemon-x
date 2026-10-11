@@ -1,0 +1,6 @@
+# Exported symbols: DllZukan.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x001d90c0` | 0 | `0x1d90c` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x001b9480` | 0 | `0x1b948` |

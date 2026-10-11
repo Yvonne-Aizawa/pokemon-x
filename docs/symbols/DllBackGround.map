@@ -1,0 +1,6 @@
+# Exported symbols: DllBackGround.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00044380` | 0 | `0x4438` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00013b80` | 0 | `0x13b8` |

@@ -1,0 +1,5 @@
+# Exported symbols: DllTradelist.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000b5fc0` | 0 | `0xb5fc` |

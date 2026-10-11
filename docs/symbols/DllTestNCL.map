@@ -1,0 +1,5 @@
+# Exported symbols: DllTestNCL.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00000000` | 0 | `0x0` |

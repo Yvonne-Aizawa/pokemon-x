@@ -1,0 +1,5 @@
+# Exported symbols: DllTrialHouseResult.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00025680` | 0 | `0x2568` |

@@ -1,0 +1,6 @@
+# Exported symbols: DllPromotion.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00132440` | 0 | `0x13244` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00130600` | 0 | `0x13060` |

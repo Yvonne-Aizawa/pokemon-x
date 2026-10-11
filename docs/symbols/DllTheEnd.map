@@ -1,0 +1,5 @@
+# Exported symbols: DllTheEnd.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00008140` | 0 | `0x814` |

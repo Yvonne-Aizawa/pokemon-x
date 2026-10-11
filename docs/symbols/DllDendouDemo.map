@@ -1,0 +1,5 @@
+# Exported symbols: DllDendouDemo.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00039b80` | 0 | `0x39b8` |

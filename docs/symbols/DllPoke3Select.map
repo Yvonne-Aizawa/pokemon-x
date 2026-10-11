@@ -1,0 +1,5 @@
+# Exported symbols: DllPoke3Select.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00055bc0` | 0 | `0x55bc` |

@@ -1,0 +1,5 @@
+# Exported symbols: DllWazaOboe.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0003e980` | 0 | `0x3e98` |

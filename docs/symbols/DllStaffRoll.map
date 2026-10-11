@@ -1,0 +1,6 @@
+# Exported symbols: DllStaffRoll.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0002d5c0` | 0 | `0x2d5c` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0002b300` | 0 | `0x2b30` |

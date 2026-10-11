@@ -1,0 +1,6 @@
+# Exported symbols: DllTradeDemo.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00019240` | 0 | `0x1924` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00018e80` | 0 | `0x18e8` |

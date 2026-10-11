@@ -43,7 +43,12 @@ def main() -> int:
             "arm-none-eabi-objdump", "-D", "-b", "binary", "-m", "arm",
             "--adjust-vma", str(code_offset),
         ]
-        if mode == "thumb":
+        # In "arm" mode, plain -m arm auto-detects Thumb via `bx` boundaries —
+        # the disassembly is interleaved correctly. The earlier -Mforce-thumb
+        # flag treated the entire segment as Thumb, which made every CRO's
+        # start (ARM loader veneer) decode to garbage. Keep the flag absent
+        # unless the user explicitly opts in.
+        if mode == "thumb" and getattr(args, "force_thumb", False):
             command.append("-Mforce-thumb")
         command.append(str(raw))
         with output.open("w", encoding="utf-8") as stream:

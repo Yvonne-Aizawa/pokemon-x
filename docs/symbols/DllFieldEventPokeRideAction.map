@@ -1,0 +1,5 @@
+# Exported symbols: DllFieldEventPokeRideAction.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00009640` | 0 | `0x964` |

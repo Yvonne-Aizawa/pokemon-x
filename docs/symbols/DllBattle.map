@@ -1,0 +1,6 @@
+# Exported symbols: DllBattle.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00cc4d80` | 0 | `0xcc4d8` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00c71000` | 0 | `0xc7100` |

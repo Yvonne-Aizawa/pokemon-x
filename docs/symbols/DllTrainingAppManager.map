@@ -1,0 +1,6 @@
+# Exported symbols: DllTrainingAppManager.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000cc00` | 0 | `0xcc0` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0000be80` | 0 | `0xbe8` |

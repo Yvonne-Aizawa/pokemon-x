@@ -1,0 +1,5 @@
+# Exported symbols: DllSalon.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000c7c0` | 0 | `0xc7c` |

@@ -1,0 +1,6 @@
+# Exported symbols: DllEshop.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00027440` | 0 | `0x2744` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x00025640` | 0 | `0x2564` |

@@ -1,0 +1,6 @@
+# Exported symbols: DllFieldEventPlayer.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0003b500` | 0 | `0x3b50` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x0003a800` | 0 | `0x3a80` |

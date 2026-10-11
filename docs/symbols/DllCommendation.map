@@ -1,0 +1,5 @@
+# Exported symbols: DllCommendation.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0000c0c0` | 0 | `0xc0c` |

@@ -1,0 +1,5 @@
+# Exported symbols: DllLangSelect.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0001a9c0` | 0 | `0x1a9c` |

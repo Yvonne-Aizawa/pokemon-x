@@ -1,0 +1,5 @@
+# Exported symbols: DllFieldEventEntranceIn.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x0001a1c0` | 0 | `0x1a1c` |

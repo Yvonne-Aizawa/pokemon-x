@@ -1,0 +1,5 @@
+# Exported symbols: DllUSGymFairy.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00006780` | 0 | `0x678` |

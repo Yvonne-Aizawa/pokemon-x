@@ -1,0 +1,6 @@
+# Exported symbols: DllPuzzle.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x000c6000` | 0 | `0xc600` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x000be6c0` | 0 | `0xbe6c` |

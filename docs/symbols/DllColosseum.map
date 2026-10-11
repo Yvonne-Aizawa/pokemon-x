@@ -1,0 +1,6 @@
+# Exported symbols: DllColosseum.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00046540` | 0 | `0x4654` |
+| `_ZN9xy_system2bg6System13SetIsCallDrawEb` | `0x000457c0` | 0 | `0x457c` |

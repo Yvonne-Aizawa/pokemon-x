@@ -1,0 +1,5 @@
+# Exported symbols: DllFriendEntry.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00029880` | 0 | `0x2988` |

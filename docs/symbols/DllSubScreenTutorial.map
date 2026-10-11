@@ -1,0 +1,5 @@
+# Exported symbols: DllSubScreenTutorial.cro
+
+| Name | Segment tag | Segment | Offset |
+|---|---:|---:|---:|
+| `nnroControlObject_` | `0x00013600` | 0 | `0x1360` |

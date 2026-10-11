@@ -24,7 +24,8 @@
 - [x] Catalog every function prologue across all 133 modules (13,554 entries)
 - [x] Fix disassembly tool bug: `-Mforce-thumb` mis-interprets ARM loader veneers
 - [x] Persist the orchestration playbook at `docs/decomp-orchestration/SKILL.md`
+- [x] **Round-3 build pipeline**: `tools/rebuild_cro.py` compiles src/<stem>_recovered.c and overlays onto a copy of the original CRO; `tools/cro_byte_diff.py` walks the function catalog and SHA-256-checks each function's byte range in both (see [`docs/cro-build-pipeline.md`](cro-build-pipeline.md))
 - [ ] Reconstruct the first function with resolved imports
-- [ ] **Round-2 per-function preliminary recovery** (planned, see Round-1 doc)
-- [ ] Add binary comparison checks
+- [ ] **Round-4 per-function recovery** (planned: feed the byte-diff punch list to dense C, watch match rate rise toward 13,554)
+- [ ] CCI stitcher + sign-with-dev-key (out of scope; see docs/cci-byte-matching.md)
 

@@ -469,3 +469,73 @@ needs to regenerate `rom.sha256`.
 - §9 (worked example) shows the new tools by name.
 - §10 (don'ts) gained: "don't promise byte-matching the surrounding
   container when the format is signed."
+
+---
+
+## 13. Round-3 lessons — Pokémon X (2026-10-11, CRO link piece)
+
+Round 3 closed the gap that Round 2's `asmdiff` couldn't: instead of
+counting branches, the rebuild tool now **actually compiles recovered C
+into ARM/Thumb bytes and overlays them onto the original CRO**. The
+build pipeline exists; round-by-round function-body recovery is
+expected to consume it directly.
+
+### What landed
+
+- `tools/rebuild_cro.py` — compile C → object → .text bytes → overlay
+  onto a copy of the original CRO. Writes `build/rebuilt/<stem>.cro`.
+- `tools/cro_byte_diff.py` — per-function SHA-256 diff between
+  original and rebuilt, walked from `work/functions/<stem>.functions.tsv`.
+- Makefile `rebuild` and `byte-diff` targets.
+- `docs/cro-build-pipeline.md` — toolchain rationale, what is and is
+  not byte-matchable today, and how Round 4 will use the diff loop.
+
+### Why a "patcher" not a full "linker"
+
+A from-scratch CRO linker would need to synthesise the header, segment
+table, exports, imports, and external-patch table with all relocations
+correct. The loader's external-patch semantics aren't decoded yet
+(`docs/static-status.md`). Trying to build a full linker now would
+burn time on a 5 % problem to enable a 95 % verification step later.
+
+`rebuild_cro.py` instead *copies* the original CRO byte-for-byte and
+overlays only the `.text` segment. This isolates one variable: does
+the recovered C, compiled, produce the original's bytes?
+
+When the answer for a module is "yes for all 18 (or all 50, or all
+500) functions," that module is fully decompiled — at which point we
+can replace the patcher with a linker for that module's metadata
+without re-doing any work.
+
+### Toolchain choice
+
+`arm-none-eabi-gcc 13.2.1`. Flags described in
+`docs/cro-build-pipeline.md`. Important notes:
+
+- `-O0` for matching disassembly (Nintendo's compiler was also
+  effect-equivalent to `-O0`; higher levels would diverge even when
+  the source is correct).
+- `-fno-toplevel-reorder` so source-order = file-order, making
+  per-function offsets predictable.
+- `-march=armv6k -mtune=arm1136j-s` for the 3DS's ARM11.
+- Pad byte is `0xCC`; tunable per-module when byte diffs surface
+  pad-byte mismatches.
+
+### Expected outcome on first run
+
+`make rebuild` succeeded for DllTestOhno, DllDialogCommon, and several
+others. **Zero functions matched on first run.** That's correct: every
+recovered C function is currently a stub. The pipeline is working; the
+recovered source is empty. Round 4 fills the source.
+
+### What changed in the skill because of this round
+
+- §4 (brief skeleton) — the verified-output for Round 4 agents should
+  end with "function compiled + byte-equivalent with original" not
+  just "function looks right structurally."
+- §5 (verification gate) — the gate now has three layers: SHA-256
+  substrate, structural asmdiff, and (Round 3+) per-function byte
+  diff. PR with byte-byte regressions is rejected.
+- §7 (anti-fabrication) — the byte-diff is a real anti-fabrication
+  gate. Stub bodies that compile to a `b .` (loop forever) would
+  visibly diverge from a `bx lr` (return) the disassembly expects.

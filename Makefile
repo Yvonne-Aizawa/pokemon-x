@@ -1,4 +1,4 @@
-.PHONY: help setup inventory modules inspect disassemble symbols patches check compare asmdiff inventory-verify inventory-verify-generate
+.PHONY: help setup inventory modules inspect disassemble symbols patches check compare asmdiff inventory-verify inventory-verify-generate rebuild byte-diff
 
 MODULE ?= extracted/romfs/DllDialogCommon.cro
 OFFSET ?=
@@ -21,7 +21,11 @@ help:
 	  '  inventory-verify             SHA-256 check every file in extracted/ vs rom.sha256' \
 	  '  inventory-verify-generate    (re)generate rom.sha256 from current extracted/' \
 	  '  asmdiff                      Per-function structural diff (MODULE=.. OFFSET=0x.. SIZE=0x..)' \
-	  '  compare                      Substrate integrity gate (the equivalent of pret/pokeemerald make compare)'
+	  '  compare                      Substrate integrity gate (the equivalent of pret/pokeemerald make compare)' \
+	  '' \
+	  'Round-3 build pipeline:' \
+	  '  rebuild                      Compile and package src/<stem>_recovered.c (MODULE=...)' \
+	  '  byte-diff                    Per-function byte diff (MODULE=..., MODULE_REBUILT=...)'
 
 setup:
 	@test -n "$(ROM)" || (echo 'Usage: make setup ROM=/path/to/Pokemon_X.cci' >&2; exit 2)
@@ -76,6 +80,28 @@ compare: inventory-verify
 	@printf 'This is the Round-1 honesty floor. See docs/cci-byte-matching.md for what is NOT\n'
 	@printf 'matched yet (the NCSD/NCCH RSA signatures), and what WILL be matched once a CRO\n'
 	@printf 'build pipeline exists.\n'
+
+# ---- Round-3 build pipeline ----------------------------------------------------
+# Compile recovered C into ARM/Thumb object code, package into a CRO that
+# overlays the original, then per-function byte-diff. See docs/cro-build-pipeline.md
+# for the full rationale and toolchain notes.
+
+rebuild:
+	@if [ -z "$(MODULE)" ]; then \
+	  echo 'Usage: make rebuild MODULE=<DllModuleStem>' >&2; \
+	  echo '   e.g. make rebuild MODULE=DllDialogCommon' >&2; \
+	  exit 2; \
+	fi
+	python3 tools/rebuild_cro.py $(shell STEM="$(MODULE)"; STEM="$${STEM##*/}"; STEM="$${STEM%.cro}"; STEM="$${STEM%.code}"; printf '%s' "$$STEM")
+
+MODULE_REBUILT ?= build/rebuilt/$(shell STEM="$(MODULE)"; STEM="$${STEM##*/}"; STEM="$${STEM%.cro}"; STEM="$${STEM%.code}"; printf '%s' "$$STEM").cro
+
+byte-diff:
+	@if [ -z "$(MODULE)" ] || [ ! -f "$(MODULE_REBUILT)" ]; then \
+	  echo 'Usage: make byte-diff MODULE=<DllModuleStem> MODULE_REBUILT=build/rebuilt/<stem>.cro' >&2; \
+	  exit 2; \
+	fi
+	python3 tools/cro_byte_diff.py $(shell STEM="$(MODULE)"; STEM="$${STEM##*/}"; STEM="$${STEM%.cro}"; STEM="$${STEM%.code}"; printf '%s' "$$STEM") --rebuilt "$(MODULE_REBUILT)"
 
 check:
 	python3 -m py_compile tools/*.py

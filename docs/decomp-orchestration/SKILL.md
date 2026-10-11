@@ -389,3 +389,83 @@ This skill is "working" if:
 
 The orchestrator edits this file after every round. The file should get longer
 and clearer over time, not shorter.
+
+---
+
+## 12. Round-2 lessons — Pokémon X (2026-10-11, build & verify)
+
+Two new tools and a new honesty floor landed this round.
+
+### What landed
+
+- `tools/inventory_verify.py` — `sha256sum -c`-equivalent for the
+  substrate. Catches extracted/ corruption before any build runs.
+- `tools/asmdiff_cro.py` — `pret/asmdiff.sh` equivalent, but structural
+  (block/branch/call counts) rather than byte-exact. Per-function.
+- `make compare` and `make asmdiff` targets in the Makefile.
+- `rom.sha256` — the canonical manifest of every file under
+  `extracted/`, analogous to `pret/pokeemerald`'s `rom.sha1`. 657 entries.
+- `docs/cci-byte-matching.md` — honest write-up of why a full-CCI byte
+  match is impossible without Nintendo's signing key, and what we can
+  match instead.
+
+### Why this round felt different
+
+Pret's `make compare` works because GBA ROMs have no signature. For a
+3DS title, **the surrounding NCSD/NCCH container is RSA-signed**. We
+*cannot* produce a byte-identical `.cci` without the (Nintendo-held,
+private, never-leaked) signing key. Pret got away without thinking
+about this; we have to think about it on day one.
+
+The honest equivalent for us has two layers:
+
+1. **Component SHA-256** of every file under `extracted/`. Today this
+   trivially passes (we've never modified the substrate). For Round 3+
+   when a CRO build pipeline exists, this check becomes meaningful: a
+   rebuilt `.cro` whose contents hash identically to the original is
+   the win criterion.
+
+2. **Per-function structural diff.** For any function in our catalog,
+   we can dump the original disassembly and the recovered C, count the
+   basic-block and branch shape, and report a gap. Once a CRO build
+   pipeline exists, this tool's `--rebuilt` mode can produce a real
+   byte diff.
+
+### What we still don't have (Round 3 backlog)
+
+- **CRO build pipeline.** The "linker script" originally requested
+  would assemble `src/<stem>_recovered.c` into a CRO file that the
+  loader would accept. This requires:
+  - An ABI baseline (the 3DS / nnRuntime C ABI), since our function
+    calls need to hit the right vtables / register conventions.
+  - A compiler invocation that produces CRO-format object files.
+  - A linker that lays out the assembled object into a valid CRO
+    with the loader's section table populated correctly.
+- **Stitcher.** A tool that takes the original `.cci`, swaps in any
+  CROs we have rebuilt, recomputes SHA-256 for sections that changed,
+  and writes a new NCCH with placeholder signatures. Bytes won't
+  match the original but every *intermediate* SHA we can match, will.
+- **Dev signer.** Out of scope for a community decomp. A developer
+  with a 3DS dev kit can sign the rebuilt CCI with their legitimate
+  dev key. We don't and shouldn't do that.
+
+### New gate pattern
+
+```
+make compare              # substrate integrity (always)
+make asmdiff MODULE=...   # per-function structural diff
+                          # (use during development on one function at a time)
+```
+
+CI runs `make compare` on every PR. A PR that fails `make compare` is
+suspect: someone has modified the inputs to the decomp, or someone
+needs to regenerate `rom.sha256`.
+
+### What changed in the skill because of this round
+
+- §5 (verification gate) now references `inventory_verify` and
+  `asmdiff_cro`.
+- §6 (branch strategy) is unchanged — worktrees still apply.
+- §9 (worked example) shows the new tools by name.
+- §10 (don'ts) gained: "don't promise byte-matching the surrounding
+  container when the format is signed."
